@@ -28,17 +28,17 @@ program
 // 注册配置命令
 program
   .command("config")
-  .description("Configure the CLI")
-  .option("-r, --registry", "Set the registry")
-  .option("--cacheDir <cacheDir>", "Set the cache directory")
-  .action((options) => {
-    console.log(options, process.env.HOME);
-    const config = require('../lib/config');
-    config(options);
-  })
+  .description("Inspect and modify the config")
+  .option("-g, --get <key>", "Get value from option")
+  .option("-s, --set <keyvalue...>", "Set option value")
+  .option("-d, --delete <key>", "Delete option from config")
+  .action((value) => {
+    const config = require("../lib/config");
+    config(value);
+  });
 
 // 查看版本命令，配置-v选项而不是默认的-V
-program.version(pgk.version, '-v, --version');
+program.version(pgk.version, "-v, --version");
 
 // 解析用户执行的命令
 program.parse(process.argv);
