@@ -1,0 +1,25 @@
+{
+  "name": "rebar-cli",
+  "version": "1.0.0-beta",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "rebar": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.1",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "download-git-repo": "^3.0.2",
+    "ejs": "^3.1.9",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.2.6",
+    "npminstall": "^7.11.1",
+    "ora": "^5.4.1"
+  }
+}
