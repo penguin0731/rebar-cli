@@ -18,11 +18,9 @@ exports.sleep = function (time = 1000) {
  * @param {String} path
  * @returns
  */
-exports.jsonFileToObject = function (path) {
-  const buffer = fs.readFileSync(path);
+exports.readJSON = function (path) {
   try {
-    const data = JSON.parse(buffer.toString());
-    return data;
+    return fs.readJSONSync(path);
   } catch (err) {
     // 如果解析异常则直接返回空
     return null;
@@ -36,4 +34,18 @@ exports.jsonFileToObject = function (path) {
  */
 exports.getPrettyJson = function (data) {
   return JSON.stringify(data, null, 2);
+};
+
+/**
+ *  文件是否存在/可读写
+ * @param {String} path 文件路径
+ * @returns Boolean
+ */
+exports.isFileExist = function (path) {
+  try {
+    fs.accessSync(path);
+    return true;
+  } catch (err) {
+    return false;
+  }
 };
