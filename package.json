@@ -1,7 +1,7 @@
 {
   "name": "rebar-cli",
   "version": "1.0.0-beta",
-  "description": "",
+  "description": "It's a scalable template cli",
   "main": "index.js",
   "bin": {
     "rebar": "./bin/cli.js"
@@ -9,8 +9,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "penguin0731",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/penguin0731/rebar-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/penguin0731/rebar-cli/issues"
+  },
+  "keyword": ["frontend", "cli"],
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.6.1",
     "chalk": "^4.1.2",
