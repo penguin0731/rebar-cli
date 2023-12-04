@@ -40,7 +40,7 @@ rebar create my-app
 我们也设置了 create 命令的别名，如：
 
 ```shell
-rebar create my-app
+rebar init my-app
 ```
 
 ## 配置
