@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/penguin0731/rebar-cli/issues"
   },
-  "keyword": ["frontend", "cli"],
+  "keywords": ["frontend", "cli"],
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.1",

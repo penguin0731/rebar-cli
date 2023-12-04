@@ -74,10 +74,10 @@ rebar config
 ```json
 {
   "templates": [
-		{
+    {
       "name": "模板名称选项",
       "value": "包名"
-		}
+    }
   ]
 }
 ```
@@ -90,7 +90,7 @@ rebar config
 
 ```json
 {
-	"root": "/Users/admin"
+  "root": "/Users/admin"
 }
 ```
 
