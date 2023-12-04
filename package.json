@@ -1,6 +1,6 @@
 {
   "name": "rebar-cli",
-  "version": "1.0.0-beta",
+  "version": "0.0.2",
   "description": "It's a scalable template cli",
   "main": "index.js",
   "bin": {
